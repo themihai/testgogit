@@ -2,5 +2,8 @@ language: go
 
 go:
   - tip
+install:
+  - go get github.com/src-d/go-git/clients/http
+  - go get gopkg.in/src-d/go-git.v2
 script:
   - go run a.go
